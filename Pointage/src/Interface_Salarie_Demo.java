@@ -55,6 +55,7 @@ public class Interface_Salarie_Demo extends JFrame {
 			public void actionPerformed(ActionEvent e) { // ajouter le try ! pour entrer et creer
 				String a= iD.getText();
 				String b = nom.getText();
+				salarie = new Salarie ();
 				salarie.setId(a);
 				salarie.setNom(b);
 				programme.setHoraire("08:00","17:00");
