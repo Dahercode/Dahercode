@@ -4,23 +4,39 @@ public class Essai {
 
 	public static void main(String[] args) throws Exception {
 	
-		
-		
-
-		Programme p;
-		p=new Programme();
-		p.setHoraire("08:00","14:00");
-	  
-		Employe a;
-		a=new Employe("E001","Alex"); //   Une fenêtre s'affiche proposant d'ajouter le salarié à la BDD
-////     	a.setProgramme(p);
 //		Manager e;
-//		e= new Manager("P001","Gandia"); // Une fenêtre s'affiche proposant d'ajouter le salarié à la BDD
-//		e.setProgramme(p);
-		
-		
+//        e= new Manager("P001","Gandia");
+//        Employe a;
+//		a=new Employe("E001","Alex");
+//		Programme p;
+//		p=new Programme();
+//		p.setHoraire("08:00","14:00");
+//		
+//		Entreprise en =	Entreprise.getInstance();
+//		e.ajouterEmploye(a);
+//		a.setEntreprise(en);
+//		a.setProgramme(p);
+//		a.entrerLocal();
+//		
+//		e.listerCompteDesEmployes();
+//		en.listerCompteDesSalaries();
+//		
 
-	Entreprise en =	Entreprise.getInstance(); //Affiche l'interface Bienvenue!
+//	Programme p;
+//		p=new Programme();
+//		p.setHoraire("08:00","14:00");
+//	  
+//		Employe a;
+//		a=new Employe("E001","Alex"); //   Une fenêtre s'affiche proposant d'ajouter le salarié à la BDD
+//////     	a.setProgramme(p);
+////		Manager e;
+////		e= new Manager("P001","Gandia"); // Une fenêtre s'affiche proposant d'ajouter le salarié à la BDD
+////		e.setProgramme(p);
+//		
+//		
+//
+//	Entreprise en =	Entreprise.getInstance(); //Affiche l'interface Bienvenue!
+//	en.listerCompteDesSalaries();
 		
 		//Tester le reste des fonctianalités sur l'employé a et le manager e
 //		en.enregistrerSalarie(a,p);  // Enregistre le salarié a avec l'horaire de travail correspondant

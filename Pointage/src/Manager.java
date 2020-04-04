@@ -30,7 +30,12 @@ public class Manager extends Salarie {
 
 
 	public void ajouterEmploye (Employe e){
-		this.getEmployes().add(e);
+		if(e.getEntreprise() != null){
+			this.getEmployes().add(e);
+        }
+		else {
+		System.out.println("L'employé " + e.getId()+ " n'est pas enregistré dans l'entreprise, il ne peut être sous la charge du Manager");
+		}
 	}
 	
 	public void listerHistoriqueEntree () {
@@ -44,7 +49,7 @@ public class Manager extends Salarie {
 		}
 	}
 	
-	public void listerCompteDesSalaries () {
+	public void listerCompteDesEmployes () {
 		if (this.getEmployes().size()>0){
 			for (int i = 0; i<this.getEmployes().size();i++) {
 				this.getEmployes().get(i).comptePersonnel();

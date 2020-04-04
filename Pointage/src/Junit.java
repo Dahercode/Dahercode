@@ -16,10 +16,14 @@ public class Junit {
 		this.s = new Salarie("T01","Riven");
 		this.p = new Programme();
 		this.en = Entreprise.getInstance();
+		
+		p.setHoraire("08:00", "14:00");
+		en.enregistrerSalarie(s, p);
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		en.retirerSalarie(s);
 	}
 
 	@Test
@@ -48,18 +52,45 @@ public class Junit {
 	}
 	@Test
 	public void isAssiduTest(){
-		p.setHoraire("08:00", "14:00");
-		en.enregistrerSalarie(s, p);
 		s.setRetard(550);
 		 assertEquals(false, s.isAssidu());  //Le resultat doit renvoyer à false puisque le salarié n'a pas respecté la règle de gestion définie par défaut (500 minutes de retard maximum)
 	}
 	@Test
 	public void isNotAssiduTest(){
-		p.setHoraire("08:00", "14:00");
-		en.enregistrerSalarie(s, p);
 		s.setRetard(450);
 		 assertEquals(true, s.isAssidu());  //Le resultat doit renvoyer à true puisque le salarié n'a pas enfreit la règle de gestion définie par défaut (500 minutes de retard maximum)
 	}
+	@Test
+	public void associationEntrepriseSalarieTest(){
+		 assertEquals(1, en.getSalaries().size());  
+	}
+	@Test
+	public void retirerSalarie(){
+		 en.retirerSalarie(s); 
+		 assertEquals(0, en.getSalaries().size()); 
+	}
+	@Test
+	public void getRetardDepuisEntreprise(){
+		 s.setRetard(200);
+		 assertEquals(200, en.getSalaries().get(0).getRetard());  
+	}
+	@Test
+	public void nouvelleAnnee_retard(){
+		 en.nouvelleAnnee();
+		 assertEquals(0, en.getSalaries().get(0).getRetard());  
+	}
+	@Test
+	public void nouvelleAnnee_avance(){
+		 en.nouvelleAnnee();
+		 assertEquals(0, en.getSalaries().get(0).getAvance());  
+	}
+	@Test
+	public void retardestJustifie() throws RetardDejaNulException{
+		 s.setRetard(100);
+		 en.retardEstJusitfie(s, 50);
+		 assertEquals(50, en.getSalaries().get(0).getRetard());  
+	}
+	
 	
 
 }
