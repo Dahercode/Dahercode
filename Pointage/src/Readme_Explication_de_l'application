@@ -1,0 +1,40 @@
+Supposons que cette application est développée sous demande d'une entreprise, elle spécialement dédiée à cette entrerpise qui possède
+des horaires fixe de travail et ce, pour l'ensemble du personnel quelque soit son poste.
+
+L'entreprise a une hiérarchie simple (Direction, Salariés), un salarié peut être Manager ou Employé normal
+elle veut que les actions suivantes soit possibles :
+
+  Pour les employés normaux :
+    Calcul des retards ou avances lors d'une rentrée aux locaux 
+    Avoir accès au compte personnel
+    L'accès doit être bloqué si l'employé dépasse un nombre précis de minutes de retard dans une période 
+    
+  Pour les managers : 
+    Calcul des retards ou avances lors d'une rentrée aux locaux 
+    Avoir accès au compte personnel
+    Ajouter des employés (sous leur responsabilités) 
+    Consulter les retards / avances des employés
+    Consulter l'historique des entrées des employés (Jour, heure, retard)
+    L'accès doit être bloqué si le manager dépasse un nombre précis de minutes de retard dans une période 
+    
+  Pour l'entreprise :
+    Enregistrer et retirer les salariés
+    Insérer la liste de salariés dans une BDD
+    Afficher la liste des salariés disponibles depuis la BDD
+    Faire un listing avec le compte personnel (retard / avance) de tous les salariés enregistrés
+    Consulter l'historique des entrées de tous ses salariés (Jour, heure, retard)
+    Faire diminuer des minutes de retard d'un salarié si le retard est justifié
+    Bloquer l'accès aux salariés n'ayant pas respecter la règle de gestion 
+    Remettre le compte à 0 de tous les salariés lors d'une nouvelle année 
+    Modifier avec liberté les horaires de travail et heure de pause. 
+    
+    
+Description de ma solution : 
+  -Utilisation d'une base de donnée SQL locale avec l'api JBDC
+  -4 interfaces graphiques 
+  -2 fichiers contenant quelques tests JUNIT (les plus importants)
+  -Gestion des méthodes à risque avec les exceptions 
+  -Utilisation de Github pour l'intégration continue
+  -2 patrons de conecption (Singleton pour l'entreprise, Facade pour l'interface Salarié_Demo)
+  
+  

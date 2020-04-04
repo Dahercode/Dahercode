@@ -30,7 +30,7 @@ public class Essai {
 		
 		en.listerCompteDesSalaries(); //Affiche le compte des retards avance pour tous les salariés enregistrés
 //		en.listerHistoriqueEntree();  Affiche l'historiques des entrées de tous les salariés, pour mieux tester la méthode, lancez l'application en mode debug où les salariés entre plusieurs fois avec un écart de temps ^^
-//		
+		
 		en.retardEstJusitfie(m, 60); //Le manager a pu justifier une heure de retard, retirons l'heure de son compteur !! 
 		m.comptePersonnel(); // Vérifions le succès de l'opération précédente ^^
 		
