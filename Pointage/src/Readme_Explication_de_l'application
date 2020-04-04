@@ -34,7 +34,7 @@ Description de la solution :
   -4 interfaces graphiques (3 liées entre elles)
   -2 fichiers contenant quelques tests JUNIT (les plus importants)
   -Traitement des méthodes à risque avec les exceptions 
-  -Utilisation de Github +TDD (sur quelques méthodes)  pour l'intégration continue 
+  -Utilisation de Github +TDD (sur quelques méthodes)  pour l'intégration continue  https://github.com/Dahercode/DelayApp
   -2 patrons de conecption (Singleton pour l'entreprise, une mini-Facade pour l'interface Salarié_Demo)
   -En plus de l'interface graphique qui permet de faire plusieurs actions, voir le jeu d'essai qui contient le reste des méthodes
   
