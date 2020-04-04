@@ -6,7 +6,7 @@ import java.util.Date;
 
 import fr.univ_smb.iae.mtii.m1.gestion.Entreprise;
 import fr.univ_smb.iae.mtii.m1.gestion.Programme;
-import fr.univ_smb.iae.mtii.m1.interfaces.Insertion_Interface;
+import fr.univ_smb.iae.mtii.m1.interfaces.Interface_Insertion_Données;
 
 public class Salarie {
 	private String iD;
@@ -36,7 +36,7 @@ public class Salarie {
 	public Salarie (String i, String n){
 		this.setId(i);
 		this.setNom(n);
-		Insertion_Interface interfagraphique =new Insertion_Interface(i,n);
+		Interface_Insertion_Données interfagraphique =new Interface_Insertion_Données(i,n);
 		interfagraphique.setVisible(true);
 		
 	}

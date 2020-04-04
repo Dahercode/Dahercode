@@ -33,7 +33,13 @@ import javax.swing.JRadioButton;
 import javax.swing.JList;
 import java.awt.Font;
 
-public class Insertion_Interface extends JFrame {
+@SuppressWarnings("unused")
+public class Interface_Insertion_Données extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6583264299889959578L;
 
 	private JPanel contentPane;
 	
@@ -46,7 +52,7 @@ public class Insertion_Interface extends JFrame {
 
 	
 	
-	public Insertion_Interface(String iD, String nom) {
+	public Interface_Insertion_Données(String iD, String nom) {
 		Database d = new Database ();
 		d.createConnection();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

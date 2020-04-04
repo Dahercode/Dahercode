@@ -1,7 +1,4 @@
 package fr.univ_smb.iae.mtii.m1.interfaces;
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -25,6 +22,12 @@ import java.awt.Font;
 
 public class Interface_Salarie_Demo extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5153532129502166144L;
+
+
 	private JPanel contentPane;
 
 
@@ -44,7 +47,7 @@ public class Interface_Salarie_Demo extends JFrame {
 		 
 		 entreprise = Entreprise.getInstance();
 		 programme = new Programme ();
-		 
+		 // Je n'ai pas instancié le salarié ici pour créer un nouveau salarié à chaque fois où l'utilisateur clique sur le bouton créer objet 
 		 
 		 
 	
@@ -58,10 +61,10 @@ public class Interface_Salarie_Demo extends JFrame {
 		
 		JButton creerObjet = new JButton("1.Cr\u00E9er l'objet !");
 		creerObjet.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) { // ajouter le try ! pour entrer et creer
+			public void actionPerformed(ActionEvent e) { 
 				String a= iD.getText();
 				String b = nom.getText();
-				salarie = new Salarie ();
+				salarie = new Salarie (); // Utilisation du constructeur normal pour ne pas génêr l'utilisateur avec une fenêtre qui propose l'insertion des données à la BDD (Ce n'est qune démo, insérer les données d'une démo n'est pas une bonne pratique ^^)
 				salarie.setId(a);
 				salarie.setNom(b);
 				programme.setHoraire("08:00","14:00");

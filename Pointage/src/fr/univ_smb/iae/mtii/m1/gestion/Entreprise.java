@@ -3,7 +3,7 @@ package fr.univ_smb.iae.mtii.m1.gestion;
 import java.util.ArrayList;
 
 import fr.univ_smb.iae.mtii.m1.exceptions.RetardDejaNulException;
-import fr.univ_smb.iae.mtii.m1.interfaces.Bienvenue;
+import fr.univ_smb.iae.mtii.m1.interfaces.Interface_Bienvenue;
 import fr.univ_smb.iae.mtii.m1.personnel.Salarie;
 
 public class Entreprise {
@@ -16,9 +16,9 @@ public class Entreprise {
 	}
 	
 	
-	//Singleton (Design Pattern)
+	//Consructeur + Singleton (Design Pattern)
 	private Entreprise(){
-		Bienvenue test = new Bienvenue();
+		Interface_Bienvenue test = new Interface_Bienvenue();
 		test.setVisible(true);	
 	}
 	private static Entreprise INSTANCE=null;

@@ -1,8 +1,6 @@
 package fr.univ_smb.iae.mtii.m1.junit;
 import static org.junit.Assert.*;
 
-import java.text.ParseException;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -96,6 +94,8 @@ public class Salarie_Programme_Entreprise_Tests {
 		 en.retardEstJusitfie(s, 50);
 		 assertEquals(50, en.getSalaries().get(0).getRetard());  
 	}
+	
+	//Le test du getHoraire est un peu spécifique puisqu'il varie en fonction de la date du jour (lire le commentaire suivant)
 //	@Test
 //	public void getHoraire_BaseDeCalculDuRetard() {
 //		assertEquals("Sat Apr 04 14:00:00 CEST 2020", p.getHoraire().toString()); //Le test renvoie à succès si la date saisie en expected correspond bien a la date du jour et si l'heure actuelle est supérieur à l'heure de pause 

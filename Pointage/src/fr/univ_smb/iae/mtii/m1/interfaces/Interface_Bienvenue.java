@@ -1,7 +1,4 @@
 package fr.univ_smb.iae.mtii.m1.interfaces;
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -17,13 +14,17 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class Bienvenue extends JFrame {
+public class Interface_Bienvenue extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7668389714708808502L;
 	private JPanel contentPane;
 
 
 	
-	public Bienvenue() {
+	public Interface_Bienvenue() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 547, 300);
 		contentPane = new JPanel();
@@ -52,7 +53,7 @@ public class Bienvenue extends JFrame {
 		openEntrepriseInterface.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				Fonctionnalites fonc_Interface= new Fonctionnalites();
+				Interface_Entreprise_Fonctionnalités fonc_Interface= new Interface_Entreprise_Fonctionnalités();
 				fonc_Interface.setVisible(true);
 				
 			}
@@ -65,7 +66,7 @@ public class Bienvenue extends JFrame {
 		JButton openSalarieInterface = new JButton("Continuer");
 		openSalarieInterface.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Interface_Salarie_Demo i= new Interface_Salarie_Demo();
+				Interface_Salarie_Demo i= new Interface_Salarie_Demo(); //Face Design Pattern dans la classe Interface_Salarie_Demo
 				i.setVisible(true);
 				
 				

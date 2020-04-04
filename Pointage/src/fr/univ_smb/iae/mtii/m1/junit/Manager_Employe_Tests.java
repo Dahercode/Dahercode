@@ -1,8 +1,6 @@
 package fr.univ_smb.iae.mtii.m1.junit;
 import static org.junit.Assert.*;
 
-import java.text.ParseException;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

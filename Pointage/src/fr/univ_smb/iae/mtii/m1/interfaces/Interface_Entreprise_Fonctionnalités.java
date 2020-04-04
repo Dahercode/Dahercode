@@ -1,7 +1,4 @@
 package fr.univ_smb.iae.mtii.m1.interfaces;
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -11,20 +8,23 @@ import fr.univ_smb.iae.mtii.m1.gestion.Entreprise;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
-import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import java.awt.Font;
 
-public class Fonctionnalites extends JFrame {
+public class Interface_Entreprise_Fonctionnalités extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5393756512641769879L;
 	private JPanel contentPane;
 
 
 	
-	public Fonctionnalites() {
+	public Interface_Entreprise_Fonctionnalités() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
