@@ -13,7 +13,6 @@ public class Junit {
 	@Before
 	public void setUp() throws Exception {
 		this.s = new Salarie("T01","Riven");
-		this.p = new Programme();
 	}
 
 	@After

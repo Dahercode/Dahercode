@@ -58,7 +58,7 @@ public class Interface_Salarie_Demo extends JFrame {
 				salarie = new Salarie ();
 				salarie.setId(a);
 				salarie.setNom(b);
-				programme.setHoraire("08:00","17:00");
+				programme.setHoraire("08:00","14:00");
 				entreprise.enregistrerSalarie(salarie,programme);
 				System.out.println("L'objet de type salarié est crée puis ajouté à l'entreprise avec succcès");
 				entrer.setEnabled(true);
@@ -88,7 +88,7 @@ public class Interface_Salarie_Demo extends JFrame {
 		lblCetteInterfaceNest.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		lblCetteInterfaceNest.setHorizontalAlignment(SwingConstants.CENTER);
 		
-		lblLhoraireDeTravail = new JLabel("L'horaire de travail est fix\u00E9 par d\u00E9faut de 8h \u00E0 17h");
+		lblLhoraireDeTravail = new JLabel("L'horaire de travail est fix\u00E9 par d\u00E9faut \u00E0 8h le matin et 14h l'aprem");
 		lblLhoraireDeTravail.setFont(new Font("Tahoma", Font.PLAIN, 9));
 		
 		lblPlusDeLibert = new JLabel("Plus de libert\u00E9 sur le jeu d'essai !");
@@ -120,19 +120,19 @@ public class Interface_Salarie_Demo extends JFrame {
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addContainerGap()
 					.addComponent(lblCetteInterfaceNest, GroupLayout.PREFERRED_SIZE, 412, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-				.addGroup(gl_contentPane.createSequentialGroup()
-					.addGap(98)
-					.addComponent(lblLhoraireDeTravail, GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
-					.addGap(128))
+					.addContainerGap(17, Short.MAX_VALUE))
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGap(23)
 					.addComponent(creerObjet)
 					.addGap(18)
 					.addComponent(entrer)
 					.addGap(18)
-					.addComponent(comptePerso, GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)
+					.addComponent(comptePerso, GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
 					.addGap(43))
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addGap(70)
+					.addComponent(lblLhoraireDeTravail, GroupLayout.PREFERRED_SIZE, 296, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(73, Short.MAX_VALUE))
 		);
 		gl_contentPane.setVerticalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)

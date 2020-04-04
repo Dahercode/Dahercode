@@ -1,5 +1,6 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Programme {
@@ -41,8 +42,9 @@ public void setHoraire(String debutTravailMatin,String debutTravailAprem ) {
 
 
 public Date getHoraire(){
-	Date d= new Date();
-	if (d.getHours()<this.heurePause){
+	Calendar cal = Calendar.getInstance();
+	
+	if (cal.get(Calendar.HOUR_OF_DAY)<this.heurePause){
 	return this.horaire[0];
 	}
 	else{
