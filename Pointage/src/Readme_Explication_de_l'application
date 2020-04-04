@@ -36,5 +36,6 @@ Description de ma solution :
   -Gestion des méthodes à risque avec les exceptions 
   -Utilisation de Github pour l'intégration continue
   -2 patrons de conecption (Singleton pour l'entreprise, Facade pour l'interface Salarié_Demo)
+  -En plus de l'interface graphique qui permet de faire plusieurs actions, voir le jeu d'essai qui contient le reste des méthodes
   
   
