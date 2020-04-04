@@ -2,7 +2,7 @@ Supposons que cette application est développée sous demande d'une entreprise, el
 des horaires fixe de travail et ce, pour l'ensemble du personnel quelque soit son poste.
 
 L'entreprise a une hiérarchie simple (Direction, Salariés), un salarié peut être Manager ou Employé normal
-elle veut que les actions suivantes soit possibles :
+elle veut que les actions suivantes soient possibles :
 
   Pour les employés normaux :
     Calcul des retards ou avances lors d'une rentrée aux locaux 
