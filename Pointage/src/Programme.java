@@ -44,7 +44,7 @@ public void setHoraire(String debutTravailMatin,String debutTravailAprem ) {
 public Date getHoraire(){
 	Calendar cal = Calendar.getInstance();
 	
-	if (cal.get(Calendar.HOUR_OF_DAY)<this.heurePause){
+	if (cal.get(Calendar.HOUR_OF_DAY)<this.heurePause){  //Date.getHours était deprecated
 	return this.horaire[0];
 	}
 	else{
