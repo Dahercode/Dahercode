@@ -13,8 +13,9 @@ public class Essai {
 //		p.setHoraire("08:00","14:00");
 //		
 //		Entreprise en =	Entreprise.getInstance();
-//		e.ajouterEmploye(a);
 //		a.setEntreprise(en);
+//		e.setEntreprise(en);
+//		e.ajouterEmploye(a);
 //		a.setProgramme(p);
 //		a.entrerLocal();
 //		

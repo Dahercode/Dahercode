@@ -30,11 +30,16 @@ public class Manager extends Salarie {
 
 
 	public void ajouterEmploye (Employe e){
-		if(e.getEntreprise() != null){
+		if(e.getEntreprise() != null && this.getEntreprise()!=null){
 			this.getEmployes().add(e);
         }
 		else {
-		System.out.println("L'employé " + e.getId()+ " n'est pas enregistré dans l'entreprise, il ne peut être sous la charge du Manager");
+			if(e.getEntreprise()==null){
+				System.out.println("L'employé " + e.getId()+ " n'est pas enregistré dans l'entreprise, il ne peut être sous la charge du Manager");
+			}
+			else {
+				System.out.println("Le manager " + this.getId()+ " n'est pas enregistré dans l'entreprise, il ne peut être responsable de l'employé");
+			}
 		}
 	}
 	
