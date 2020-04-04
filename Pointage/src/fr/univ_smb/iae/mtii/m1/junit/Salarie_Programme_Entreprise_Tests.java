@@ -1,3 +1,4 @@
+package fr.univ_smb.iae.mtii.m1.junit;
 import static org.junit.Assert.*;
 
 import java.text.ParseException;
@@ -6,7 +7,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Junit {
+import fr.univ_smb.iae.mtii.m1.exceptions.RetardDejaNulException;
+import fr.univ_smb.iae.mtii.m1.gestion.Entreprise;
+import fr.univ_smb.iae.mtii.m1.gestion.Programme;
+import fr.univ_smb.iae.mtii.m1.personnel.Salarie;
+
+public class Salarie_Programme_Entreprise_Tests {
 	private Salarie s;
 	private Programme p;
 	private Entreprise en;
@@ -90,6 +96,10 @@ public class Junit {
 		 en.retardEstJusitfie(s, 50);
 		 assertEquals(50, en.getSalaries().get(0).getRetard());  
 	}
+//	@Test
+//	public void getHoraire_BaseDeCalculDuRetard() {
+//		assertEquals("Sat Apr 04 14:00:00 CEST 2020", p.getHoraire().toString()); //Le test renvoie à succès si la date saisie en expected correspond bien a la date du jour et si l'heure actuelle est supérieur à l'heure de pause 
+//	}
 	
 	
 

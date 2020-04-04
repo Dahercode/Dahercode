@@ -1,4 +1,4 @@
-
+package fr.univ_smb.iae.mtii.m1.personnel;
 
 public class Employe extends Salarie{
 

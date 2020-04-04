@@ -1,5 +1,10 @@
+package fr.univ_smb.iae.mtii.m1.gestion;
 
 import java.util.ArrayList;
+
+import fr.univ_smb.iae.mtii.m1.exceptions.RetardDejaNulException;
+import fr.univ_smb.iae.mtii.m1.interfaces.Bienvenue;
+import fr.univ_smb.iae.mtii.m1.personnel.Salarie;
 
 public class Entreprise {
  

@@ -1,3 +1,4 @@
+package fr.univ_smb.iae.mtii.m1.utilités;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

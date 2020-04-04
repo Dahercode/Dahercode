@@ -1,7 +1,12 @@
+package fr.univ_smb.iae.mtii.m1.personnel;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+
+import fr.univ_smb.iae.mtii.m1.gestion.Entreprise;
+import fr.univ_smb.iae.mtii.m1.gestion.Programme;
+import fr.univ_smb.iae.mtii.m1.interfaces.Insertion_Interface;
 
 public class Salarie {
 	private String iD;

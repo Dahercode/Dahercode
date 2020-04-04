@@ -1,9 +1,15 @@
+package fr.univ_smb.iae.mtii.m1.interfaces;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import fr.univ_smb.iae.mtii.m1.gestion.Entreprise;
+import fr.univ_smb.iae.mtii.m1.gestion.Programme;
+import fr.univ_smb.iae.mtii.m1.personnel.Salarie;
+
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;

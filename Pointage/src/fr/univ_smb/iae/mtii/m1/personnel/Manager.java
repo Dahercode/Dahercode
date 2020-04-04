@@ -1,3 +1,4 @@
+package fr.univ_smb.iae.mtii.m1.personnel;
 
 import java.util.ArrayList;
 
@@ -41,6 +42,9 @@ public class Manager extends Salarie {
 				System.out.println("Le manager " + this.getId()+ " n'est pas enregistré dans l'entreprise, il ne peut être responsable de l'employé");
 			}
 		}
+	}
+	public void retirerEmploye (Employe e){
+		this.getEmployes().remove(e);
 	}
 	
 	public void listerHistoriqueEntree () {

@@ -1,3 +1,4 @@
+package fr.univ_smb.iae.mtii.m1.exceptions;
 
 public class RetardDejaNulException extends Exception {
 
