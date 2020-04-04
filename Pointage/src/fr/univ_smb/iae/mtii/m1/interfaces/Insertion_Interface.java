@@ -74,22 +74,20 @@ public class Insertion_Interface extends JFrame {
 				try {
 					String iD=iDInput.getText();
 					String nom=nomInput.getText();
-//					String type=typeInput.getText();
+
 					PreparedStatement st= d.getCon().prepareStatement("INSERT INTO SALARIES VALUES(?,?)");
 					st.setString(1, iD);	
 					st.setString(2, nom);
-//					st.setString(3, type);
 					st.execute();
 					System.out.println("L'insertion est réussie");
 					st.close();
-				} catch (SQLException | NullPointerException ex) {
+				} 
+				catch (SQLException | NullPointerException ex) {
 					
-				   Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
-					
-			}
-		
-			
-			}
+				System.out.println("Une erreur SQL est survenue, vérifier que la clé primaire n'existe pas déjà et le format des données saisies");   
+				Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);	   
+			    }
+		   }
 			
 			
 		});
