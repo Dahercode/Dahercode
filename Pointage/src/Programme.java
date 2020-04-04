@@ -22,7 +22,7 @@ public void setHoraire(String debutTravailMatin,String debutTravailAprem ) {
 			System.out.println("L'horaire de début du travail le matin est fixée à "+tf3.format(horaire[0])); // J'affiche mon horaire en format tf3
 		} 
 		catch (ParseException | NullPointerException e) {			
-			
+			e.printStackTrace();
 			System.out.println("Veuillez saisir l'horaire de début matin correctement, sous le format suivant >> HH:MM");
 		} 
 		
